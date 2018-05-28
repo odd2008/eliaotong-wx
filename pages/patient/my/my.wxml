@@ -1,0 +1,24 @@
+<view class="index">
+  <view class='userinfo'>
+    <image src='{{userInfo.avatarUrl}}' background-size="cover" class="userinfo-avatar"></image>
+    <text  class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+     <block wx:if="{{isShow}}">
+        <view class='nav'bindtap='updateTap' style='display:{{Pdisplay}}'>
+          <view class='icon'>
+            <image src='/image/personal.png'></image>
+          </view>
+          <view class='text'>个人信息</view>
+      </view>
+    </block>
+    <block wx:else>    
+        <view class='nav'bindtap='doctorMyTap' style='display:{{Ddisplay}}'>
+            <view class='icon'>
+              <image src='/image/personal.png'></image>
+            </view>
+            <view class='text'>个人信息</view>
+        </view>
+    </block>
+
+</view>

@@ -1,0 +1,8 @@
+<template name="doctor-footer">
+  <view class='footer'>
+    <navigator url='/pages/registerDoctor/registerDoctor' hover-class='selected' class='book'><image src='/image/guahao_hl.png' class='img'></image> <text class='text'> 当前挂号</text>
+    </navigator>
+    <navigator url="/pages/registerDoctor/hadSeen/hadSeen"   hover-class='selected' class='hadSeen'><image src='/image/yisheng_hl.png' class='img'></image> <text class='text'> 已诊记录</text></navigator> 
+    <navigator url="/pages/registerDoctor/doctor-my/doctor-my"  hover-class='selected' class='doctor-my'><image src='/image/me1.png' class='img'></image> <text class='text'> 我的信息</text></navigator>
+  </view>
+</template>

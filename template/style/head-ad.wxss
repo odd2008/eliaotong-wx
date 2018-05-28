@@ -1,0 +1,7 @@
+.top-ad {
+  width: auto;
+  height:200rpx;
+  border: 1px solid #1e1e1e;
+  text-align: center;
+  line-height: 200rpx;
+}

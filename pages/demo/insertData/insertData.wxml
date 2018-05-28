@@ -1,0 +1,46 @@
+<view class="container" >
+  <view class="page-body">
+
+  <view class='warn'> 
+      <text class='warn-text'>为确保服务顺利进行，请提供您的真实手机号</text>
+    </view>
+
+   	<view class="weui-cells weui-cells_after-title">
+	
+
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">编号：</view>
+    <input class="list-402" placeholder="{{userId}}" value="{{item.userId}}" name="userId" bindblur="onInputUserId"
+    disabled='true'></input>
+  </view>
+  
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">姓名：</view>
+		<input class="list-402" placeholder="请输入姓名" value="{{item.patientName}}" name="patientName"
+               bindblur="onInputPatientName"/>
+  </view>
+
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%" >电话：</view>
+		  <input class="list-402-tel"  placeholder="请输入电话" value="{{item.tel}}" name="tel" bindblur="onInputTel"/>
+      <button disabled='{{!isDisplay}}' class='list-402-telCode' bindtap='telCode' type='default' >{{telCode}}<text class="{{isDisplay?'num':'normal'}}" >({{second}})s</text></button>
+
+  </view>
+   
+   <view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">验证码：</view>
+		<input class="list-402" placeholder="请输入验证码" value="{{item.TelCode}}" name="TelCode" bindblur="onInputTelCode"/>
+   </view>
+
+		
+    <view class="btn-area">
+      <button type="primary" bindtap="submit" disabled="{{item.tel ==  null}}">提交</button>
+      <button type="default" bindtap="back">返回</button>
+    </view>
+  </view>
+    
+   
+    
+        
+  </view>
+</view>

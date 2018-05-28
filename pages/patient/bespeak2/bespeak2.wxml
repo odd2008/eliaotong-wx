@@ -1,0 +1,80 @@
+<!--pages/book/bespeak2/bespeak2.wxml-->
+<view class="container">
+     <!-- header-->
+    <import src="/template/doctor-header.wxml" ></import>
+    <template is="doctor-header"></template>
+    <!-- 个人简介-->
+    <view class="box1">
+        <view class="intro">
+            <view class="intro-tittle">
+                <image src="/image/me1.png"></image>
+                <text>个人简介</text>
+            </view>
+            <view class="intro-content">
+                <text class='ellipsis'>省内妇科资深专家，从事妇科医疗临床工作30余年，积累了丰富的专业知识和业务经验，能够独立的开展妇科的常见工作和特殊的业务，从事医疗工作期间从未出现差错事故，被誉为“安全无事故主任医师”。工作态度积极，视病人为亲人，有良好的医德医风，深受广大患者的好评，先后在国家及省级杂志上刊登20余篇具有学术价值的论文。</text>
+            </view>
+        </view>
+    </view>
+
+    <!--  医生上班报表  -->
+    <view class="list">
+        <view class="control">
+            <image class="left" src="/image/left.png" bindtap="leftTap"></image>
+                <image class="state" src="/image/guahao_hl.png"></image>
+                <text>排班信息</text>
+            <image class="right" src="/image/right.png" bindtap="rightTap"></image>
+        </view>
+<!-- data -->
+        <view class="date" >
+
+            <view class="date-item">日期</view>
+            <view class="date-item">{{time}}</view>
+            <view class="date-item">2/12</view>
+            <view class="date-item">{{time}}</view>
+            <view class="date-item">{{time}}</view>
+            <view class="date-item">{{time}}</view>
+            <view class="date-item">{{time}}</view>
+            <view class="date-item">{{time}}</view>
+        </view>
+        <!-- 上午-->
+        <view class="am">
+            <view class="am-item">上午</view>
+            <view class="am-item">
+              <button class='work' bindtap='costTap' >{{work}}</button>
+            </view>
+            <view class="am-item">
+                <button class='work'>{{work}}</button>
+            </view>
+            <view class="am-item">
+                <button class='work'>{{work}}</button>
+            </view>
+            <view class="am-item"></view>
+            <view class="am-item"></view>
+            <view class="am-item"></view>
+            <view class="am-item"></view>
+        </view>
+        <!-- 下午-->
+        <view class="pm">
+            <view class="pm-item">下午</view>
+            <view class="pm-item">
+              <button class='rest'>{{rest}}</button>
+            </view>
+            <view class="pm-item">
+                <button class='rest'>{{rest}}</button>
+            </view>
+            <view class="pm-item">
+                <button class='rest'>{{rest}}</button>
+            </view>
+            <view class="pm-item"></view>
+            <view class="pm-item"></view>
+            <view class="pm-item"></view>
+            <view class="pm-item"></view>
+        </view>
+    </view>
+
+
+        <!-- footer-->
+    <import src="/template/book-footer.wxml" ></import>
+    <template is="book-footer"></template>
+
+    </view>

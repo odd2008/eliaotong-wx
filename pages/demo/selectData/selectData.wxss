@@ -1,0 +1,20 @@
+/* @import "/pages/common/lib/weui.wxss";
+@import "/pages/common/index.wxss"; */
+
+.weui-cell {
+  padding: 2px 10px;
+}
+.weui-cell__bd{
+  min-height: 40rpx;
+  word-break: break-all;
+}
+.kind-list-img {
+  width: 40rpx;
+  height: 40rpx;
+}
+.kind-list-item-hd {
+  padding: 0rpx;
+  display: flex;
+  align-items: center;
+  transition: opacity .3s;
+}

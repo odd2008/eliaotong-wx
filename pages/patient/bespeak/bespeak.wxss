@@ -1,0 +1,82 @@
+/* pages/book/bespeak/bespeak.wxss */
+
+@import "/template/style/head-ad.wxss";
+@import "/template/style/book-footer.wxss";
+
+
+/* 列表 */
+.container {
+  background: #F8F8F8;
+}
+.list {
+  width: auto;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.list-item {
+  width: auto;
+  height: 250rpx;
+  color: #818183;
+  position: relative;
+  border-bottom: 1rpx solid #d2d2d2;
+  background: #eee
+  
+}
+/* doctor info  */
+.doctor-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.name-num {
+  height: 55rpx;
+  width: auto;
+  font-size: 35rpx;
+ 
+}
+.doctor-name {
+  position: absolute;
+  left: 160rpx;
+  top: 15rpx;
+}
+.doctor-num {
+   position: absolute;
+  left: 400rpx;
+  top: 15rpx;
+  color: blue;
+}
+.duty {
+  height: 96rpx;
+  line-height: 96rpx;
+  padding-left: 90rpx;
+  position: absolute;
+  left: 120rpx;
+  top: 50rpx;
+
+}
+/* 预约按钮  */
+.book {
+  position: absolute;
+  right: 60rpx;
+  bottom: 0;
+  height: 140rpx;
+  width: 140rpx;
+  line-height: 140rpx;
+  border-radius: 50%;
+  font-size: 20rpx;
+}
+/* 地址  */
+.address,.hospital {
+  font-size: 28rpx;
+}
+.hospital {
+  position: absolute;
+  left: 0;
+  bottom: 40rpx;
+}
+.address {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* 底部颜色  */

@@ -1,0 +1,21 @@
+<!--pages/doctor/record1/record1.wxml-->
+<view class='abc'>
+    <view class="tr bg-w">
+        <view class="th">序号</view>
+        <view class="th">姓名</view>
+        <view class="th">性别</view>
+        <view class="th">   </view>
+      </view>
+<scroll-view  scroll-y  style="height: 600rpx;">
+<block wx:for="{{list}}" wx:key="{{item.RecNo}}">
+ <view class="table" >
+  <view class="tr bg-g" wx:for="{{item}}" wx:key="{{item.RecNo}}" >
+      <view class="td">{{index+1}}</view>
+      <view class="td">{{item.patientName?item.patientName:""}}</view>
+      <view class="td">{{item.sex?item.sex:""}}</view>
+      <view class="td"><button type='primary' bindtap='btnTap' size='mini'>弹出</button></view>
+  </view>
+</view>
+</block>
+    </scroll-view>
+</view>

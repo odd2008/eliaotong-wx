@@ -1,0 +1,120 @@
+
+/* top 按钮组  */
+.btn-group {
+  height: 150rpx;
+  width: auto;
+  float: left;
+  padding: 25rpx;
+}
+.helpbook,.guohao {
+  height: 80rpx;
+  float: left;
+  width: 230rpx;
+}
+.helpbook{
+  margin-left: 65rpx;
+}
+.guohao {
+  margin-left:120rpx;
+}
+
+/* 患者信息  */
+.box-1 {
+  height:790rpx;
+  width: auto;
+  border-top: 4rpx solid #9e9e9e; 
+  border-bottom: 4rpx solid #9e9e9e; 
+}
+.sickInfo {
+  width:auto;
+  height:670rpx;
+}
+.sickName,.sickSex,.sickAge,.sickWeight,.sickHigh{
+  height: 100rpx;
+  width: auto;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30rpx;
+  margin-top: 10rpx;
+  border-bottom: 1rpx solid #9e9e9e;
+}
+
+
+/* 人数统计  */
+.num-group {
+  font-size: 30rpx;
+  font-weight: 500;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.totalPeople,.hadPeople,.notPeopel {
+  float: left;
+  width: 33%;
+}
+
+
+/* 下一位按钮  */
+.callNext {
+  padding-bottom: 20rpx;
+  text-align: center;
+  
+}
+.btnCall {
+  font-size: 35px;
+  width: auto;
+  height: 150rpx;
+  line-height: 150rpx;
+}
+
+/*弹窗  */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+.modal-content {
+  padding: 50rpx 32rpx;
+}
+.modal-text {
+  font-weight: bold;
+  font-size: 50rpx;
+  text-align: center;
+}
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+.btn-confirm {
+  width: 100%;
+  color: #ec5300;
+  text-align: center;
+}

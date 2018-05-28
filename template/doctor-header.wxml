@@ -1,0 +1,12 @@
+ <template name="doctor-header">
+    <view class='hospital-n'>
+    <image src='/image/hongshizi.png'></image>
+    
+    <text>诊所:</text></view>
+    <!-- 医生信息 -->
+      <view class='doctorInfo'>
+        <view class='doctorText'>
+          当前座诊医生：<text class='doctorName'></text>
+        </view>
+      </view>
+ </template>     

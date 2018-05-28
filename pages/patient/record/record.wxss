@@ -1,0 +1,39 @@
+/* pages/my/record/record.wxss */
+@import "/template/style/head-ad.wxss";
+
+/* 记录列表  */
+.list {
+  width: auto;
+  padding: 20rpx;
+}
+.list-item {
+  height: 180rpx;
+  width: auto;
+  background: #eee;
+  margin-bottom: 25rpx;
+ 
+}
+/* 医生信息  */
+.doctor-image image{
+  width: 150rpx;
+  height:180rpx;
+  float: left;
+}
+.doctor-info {
+  font-size: 28rpx;
+  color: #868686;
+  height: 180rpx;
+  width: 300rpx;
+  padding:20rpx 0 0 20rpx;
+  float: left;
+}
+/* 时间  */
+.time {
+  text-align: center;
+  line-height: 180rpx;
+  width: 120rpx;
+  font-size: 20rpx;
+  float: left;
+  color: #868686;
+}
+

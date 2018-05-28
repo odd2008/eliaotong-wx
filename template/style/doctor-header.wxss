@@ -1,0 +1,36 @@
+/* 诊所  */
+.hospital-n {
+  background: #EDECE8;
+  height:90rpx;
+  width: auto;
+  color: #818183;
+  font-size: 35rpx;
+  text-align: center;
+  line-height: 90rpx;
+  position: relative;
+}
+.hospital-n image {
+  position: absolute;
+  left:100rpx;
+  top: 10rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+/* 医生信息 */
+.doctorInfo {
+  padding: 25rpx;
+  height: 90rpx;
+  width: auto;
+}
+.doctorText {
+ margin-left: 80rpx;
+ font-size: 30rpx;
+ color: #818183;
+ height: 60rpx;
+ line-height: 60rpx;
+}
+.doctorName {
+  font-weight: bold;
+  color: #252626;
+  font-size: 40rpx;
+}

@@ -1,0 +1,55 @@
+<!--pages/demo/registerData/registerData.wxml-->
+
+<view class="container">
+  <view class="page-body">
+    <view class='personal-info'> 
+      <text class='personal-text'>个人信息</text>
+    </view>
+
+<view class="weui-cells weui-cells_after-title" >
+ 
+  
+  <view class="weui-cell">
+    <view class="weui-cell__bd">年龄：</view>
+		<input class='list-402' placeholder="请输入年龄" value="{{item.age}}" name="age" bindblur="onInputAge"></input>
+  </view>
+	 <view class="weui-cell">
+    <view class="weui-cell__bd" >性别：</view>
+		<input class="list-402" placeholder="请输入性别" value="{{item.sex}}" name="sex" bindblur="onInputSex"></input>
+  </view>
+  
+  
+  <view class="weui-cell">
+    <view class="weui-cell__bd" >体重(kg)：</view>
+		<input class="list-402" placeholder="请输入体重" value="{{item.weight}}" name="weight" bindblur="onInputWeight"></input>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">身高(cm)：</view>
+		<input class="list-402" placeholder="请输入身高" value="{{item.high}}" name="high" bindblur="onInputHigh"></input>
+  </view>
+   <view class="weui-cell">
+    <view class="weui-cell__bd" >出生日期：</view>
+		<input class="list-402" placeholder="格式:1990-01-01" value="{{item.birthday}}" name="birthday" bindblur="onInputBirthday"></input>
+  </view> 
+  
+
+
+
+  <view class='article-title'>
+    <text>温馨提示：</text>
+  </view>
+  <view class='article-text'> 
+    <text>我院实行实名制就诊，请您务必提供真实准确的就诊人信息
+    进行注册绑定，如注册过程中遇到任何问题，请咨询
+    客服中心：“0758-8X5X5X”，谢谢合作！
+    </text>
+  </view>
+  
+    <view class="btn-area">
+      <button type="primary" bindtap="register" disabled='{{item.sex==null}}' >开始预约</button>
+      <button type="default" bindtap="back">返回</button>
+    </view>
+
+  </view>
+  </view>
+</view>

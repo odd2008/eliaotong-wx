@@ -1,0 +1,29 @@
+/* pages/doctor/tips/tips.wxss */
+.body {
+  padding: 25rpx;
+  height: auto;
+  width: auto;
+}
+
+.info-icon {
+  text-align: center;
+}
+.warn-title {
+  padding-left: 45rpx;
+  margin-top: 30rpx;
+  font-size: 40rpx;
+  color: #9e9e9e;
+  text-align: center;
+  height: 80rpx;
+  width: auto;
+  line-height: 80rpx;
+  font-weight: bold;
+}
+.warn-content {
+  font-size: 28rpx;
+  color: #9e9e9e;
+  text-align: center;
+  width: auto;
+  font-weight: bold;
+  
+}

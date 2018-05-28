@@ -1,0 +1,14 @@
+<!--pages/doctor/activate/activate.wxml-->
+<!--pages/book/bespeak/bespeak.wxml-->
+<view class='container'>
+    
+<scroll-view  scroll-y  style="height: 900rpx;">
+<block wx:for-items="{{list}}" wx:key="{{item.RecNo}}">
+    <view class='list'>
+    
+      
+    </view>
+</block>    
+</scroll-view>
+    
+</view>

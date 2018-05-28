@@ -1,0 +1,29 @@
+<!--pages/register/register.wxml-->
+<view class="container" >
+  <view class="page-body">
+
+  <view class='warn'> 
+      <text class='warn-text'>为确保服务顺利进行，请提供您的真实手机号</text>
+    </view>
+
+   	<view class="weui-cells weui-cells_after-title">
+	
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">姓名：</view>
+		<input class="list-402" placeholder="请输入姓名" value="{{item.patientName}}" name="patientName"
+               bindblur="onInputPatientName"/>
+  </view>
+
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%" >电话：</view>
+		  <input class="list-402"  placeholder="请输入电话" value="{{item.tel}}" name="tel" bindblur="onInputTel"/>
+  </view>
+   
+    <view class="btn-area">
+      <button type="primary" bindtap="submit" disabled="{{telTrue == false}}">提交</button>
+    </view>
+  </view>
+    
+        
+  </view>
+</view>

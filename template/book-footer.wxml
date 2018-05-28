@@ -1,0 +1,7 @@
+<template name="book-footer">
+  <view class='footer'>
+    <navigator url='/pages/book/book'  hover-class="selected" open-type="switchTab"  class='book1'><image src='/image/guahao_hl.png' class='img'></image> <text class='text' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;挂号</text></navigator>
+    <navigator url="/pages/record/record" hover-class="selected" open-type="switchTab"  class='record'><image src='/image/record_hl.png' class='img'></image> <text class='text'> 挂号记录</text></navigator> 
+    <navigator url="/pages/my/my" hover-class="selected" open-type="switchTab" class='user-my'><image src='/image/me1.png' class='img'></image> <text class='text'> 我的信息</text></navigator>
+  </view>
+</template>

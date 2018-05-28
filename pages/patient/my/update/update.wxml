@@ -1,0 +1,65 @@
+<!--pages/my/update/update.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class='personal-info'> 
+      <text class='personal-text'>个人信息</text>
+    </view>
+
+<view class="weui-cells weui-cells_after-title" >
+ 
+  
+  <view class="weui-cell">
+    <view class="weui-cell__bd">年龄：</view>
+      <picker  class="list-402" bindchange="bindPickerChangeAge" value="{{list.age}}" range="{{ages}}" >
+        <view wx:if="{{AgePickerTrue}}">{{item.age}}</view>
+        <view wx:else >{{list.age}}</view>
+      </picker>
+   </view>
+	 <view class="weui-cell">
+    <view class="weui-cell__bd" >性别：</view>
+        <radio-group bindchange="radioChange" class="list-402">
+            <label><radio  value="男"/>男</label>
+            <label><radio  value="女"/>女</label>
+        </radio-group>
+   </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd" >体重(kg)：</view>
+      <picker  class="list-402" bindchange="bindPickerChangeWeight" value="{{list.weight}}" range="{{weights}}" >
+          <view wx:if="{{WeightPickerTrue}}">{{item.weight}}</view>
+          <view wx:else >{{list.weight}}</view>
+      </picker>
+  </view>
+  <view class="weui-cell">
+    <view class="weui-cell__bd">身高(cm)：</view>
+     <picker  class="list-402" bindchange="bindPickerChangeHigh" value="{{list.high}}" range="{{highs}}" >
+          <view wx:if="{{HighPickerTrue}}">{{item.high}}</view>
+          <view wx:else >{{list.high}}</view>
+      </picker>
+  </view>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">出生日期：</view>
+        <view class="list-402">
+            <picker mode="date" value="{{birthday}}" start="1900-09-01" end="2019-09-01" bindchange="bindDateChange">
+                <view class="weui-input">{{birthday}}</view>
+            </picker>
+        </view>
+      </view>
+   
+  <view class='article-title'>
+    <text>温馨提示：</text>
+  </view>
+  <view class='article-text'> 
+    <text>我院实行实名制就诊，请您务必提供真实准确的就诊人信息
+    进行注册绑定，如注册过程中遇到任何问题，请咨询
+    客服中心：“0758-8X5X5X”，谢谢合作！
+    </text>
+  </view>
+  
+    <view class="btn-area">
+      <button type="primary" bindtap="recompose" disabled='{{item.sex==null}}' >确认修改</button>
+      <button type="default" bindtap="back">返回</button>
+    </view>
+
+  </view>
+  </view>
+</view>

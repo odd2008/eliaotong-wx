@@ -1,0 +1,25 @@
+<!--pages/my/record/record.wxml-->
+<view class='container'>
+
+
+
+
+
+<scroll-view  scroll-y  style="height: 100%">
+
+<!-- 记录列表  -->
+<block wx:for="{{list}}" wx:key="{{item.RecNo}}">
+<view class='list' > 
+  <view class='list-item'>
+    <view class='doctor-info'>
+        <view class='name'>姓名:{{item.doctorName?item.doctorName:""}}</view>
+        <view class='number'>电话:{{item.doctor_tel?item.doctor_tel:""}}</view>
+        <view class='address'>诊所:{{hospitalName}}</view>
+     </view>
+    <view class='time'></view>  
+  </view>
+</view>
+</block>
+</scroll-view>
+
+</view>

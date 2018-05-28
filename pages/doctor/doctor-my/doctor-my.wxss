@@ -1,0 +1,26 @@
+/* pages/demo/registerDoctor/doctor-my/doctor-my.wxss */
+@import "/template/style/doctor-footer.wxss";
+
+.doctor-info {
+  padding: 25rpx;
+}
+.doctor-img {
+  height: 250rpx;
+  width: auto;
+  text-align: center;
+}
+.doctor-img image {
+  height: 200rpx;
+  width: 170rpx;
+  margin-top: 50rpx;
+}
+.weui-cell {
+  height: 100rpx;
+}
+.weui-cell__bd{
+  font-size: 33rpx;
+  min-height: 40rpx;
+  word-break: break-all;
+  font-weight: bold;
+  display: inline;
+}

@@ -1,0 +1,10 @@
+<template name="head">
+  <view class="index-hd">
+    <view class="kind-list-item-hd">
+      <view>
+        <view><image class="userinfo-avatar" src="{{avatarUrl}}"></image></view>
+        <view class="name">{{nickName}}</view>
+      </view>
+    </view>
+  </view>
+</template>

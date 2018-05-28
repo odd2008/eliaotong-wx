@@ -1,0 +1,32 @@
+
+
+<view class='container'>
+
+
+<view class='abc' style='height:700rpx'>
+    <view class="tr bg-w">
+        <view class="th">序号</view>
+        <view class="th">姓名</view>
+        <view class="th">性别</view>
+        <view class="th">状态</view>
+        <!-- <view class="th">时间</view> -->
+      </view>
+<scroll-view  scroll-y  style="height: 700rpx;">
+<block wx:for="{{hadlist}}" wx:key="{{item.currRecNo}}">
+ <view class="table">
+    <view class="tr bg-g"  >
+      <view class="td">{{index+1}}</view>
+      <block wx:for="{{item}}" wx:key="{{item.currRecNo}}" > 
+      <view class="td">{{item.patientName?item.patientName:""}}</view>
+      <view class="td">{{item.sex?item.sex:""}}</view>
+      <view class="td">{{item.state?item.state:""}} </view>
+      <!-- <view class="td">{{item.time}}</view> -->
+      </block>
+    </view>
+</view>
+
+</block>
+    </scroll-view>
+</view>
+
+</view>

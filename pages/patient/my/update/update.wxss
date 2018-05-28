@@ -1,0 +1,51 @@
+
+
+@import "/template/common/lib/weui.wxss";
+@import "/template/common/index.wxss"; 
+
+page {
+  height: 100%
+}
+.page-body {
+  background: #fff;
+}
+.weui-cell__bd{
+  font-size: 30rpx;
+  min-height: 40rpx;
+  word-break: break-all;
+  font-weight: bold;
+  display: inline;
+}
+
+.weui-cells:before {
+  border-top: none;
+}
+.weui-cells:after {
+  border-bottom: none;
+}
+.personal-info {
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 25rpx;
+  color: #7e7e7e;
+  background: #F1F0F6;
+}
+.personal-text {
+  margin-left: 37rpx;
+}
+.list-402 {
+  font-size: 28rpx;
+  width: 65%;
+}
+.article-title {
+  margin-top: 250rpx;
+  color: #7e7e7e;
+  font-size: 25rpx;
+  text-align: center;
+}
+.article-text {
+  color: #7e7e7e;
+  font-size: 25rpx;
+  text-align: center;
+  margin-top: 10rpx;
+}

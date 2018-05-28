@@ -1,0 +1,11 @@
+<!--pages/doctor/tips/tips.wxml-->
+<view class='body'>
+  <view class='info-icon'>
+    <icon type='info' size='120'></icon>
+  </view>
+    <view class='warn-title'>提示：
+      <text class='warn-content'>
+        该用户未向管理员激活，请联系管理员进行添加！
+      </text>
+    </view>
+</view>

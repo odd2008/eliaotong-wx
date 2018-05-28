@@ -1,0 +1,23 @@
+<!--pages/book/bespeak/bespeak.wxml-->
+<view class='container'>
+   
+<scroll-view  scroll-y  style="height: 100%;">
+<block wx:for-items="{{list}}" wx:key="{{item.RecNo}}">
+    <view class='list'>
+    
+      <view class='list-item'>
+        <image class='doctor-img' src='/image/doctor.png'></image>
+        <view class='name-num'>
+           <text class='doctor-name'>姓名:{{item.doctorName?item.doctorName:""}}</text>
+           <text class='doctor-num'>电话:{{item.doctor_tel?item.doctor_tel:""}}</text>
+        </view>
+        <view class='duty'>医生</view>
+        <button type='primary' class='book' id="{{index}}" bindtap="bespeakTap">马上{{btnText}}</button>
+        <view class='hospital'>诊所:</view>  
+        <view class='address'>地址:</view>  
+      </view>
+    </view>
+</block>    
+</scroll-view>
+   
+</view>

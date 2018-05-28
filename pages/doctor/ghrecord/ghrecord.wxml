@@ -1,0 +1,23 @@
+<!--pages/doctor/ghrecord/ghrecord.wxml-->
+
+  <view class='abc' style='height:700rpx'>
+    <view class="tr bg-w">
+        <view class="th">序号</view>
+        <view class="th">姓名</view>
+        <view class="th">性别</view>
+        <view class="th">状态 </view>
+      </view>
+    <scroll-view  scroll-y  style="height:700rpx;">
+      <block wx:for-items="{{list}}" wx:key="{{item.RecNo}}">
+        <view class="table">
+            <view class="tr bg-g" id="{{item.state==1?'timeout':(item.state==2?'normal':'now')}}">
+              <view class="td" >{{index+1}}</view>
+              <view class="td">{{item.patientName?item.patientName:""}}</view>
+              <view class="td">{{item.sex?item.sex:""}}</view>
+              <view class="td">{{state?"预约":"挂号"}} </view>
+            </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+

@@ -1,0 +1,16 @@
+<block wx:for-items="{{list}}" wx:key="{{item.RecNo}}">
+<view class="weui-cells" id="{{item.RecNo}}"  bindtap="selectData" >
+      <view class="weui-cell">
+        <view class="weui-cell__bd" >编号：{{item.userId?item.userId:""}}</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">电话：{{item.tel?item.tel:""}}</view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__bd">姓名：{{item.patientName?item.patientName:""}}</view>
+      </view>
+</view>
+</block>
+<view class="btn-area">
+  <button type="primary" bindtap="back">返回</button>
+</view>

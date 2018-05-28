@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-body">
+   	<view class="weui-cells weui-cells_after-title" >
+	
+
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">编号：</view>
+		<input class="list-402" placeholder="请输入编号" value="{{item.userId}}" name="userId" bindblur="onInputUserId"></input>
+  </view>
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">电话：</view>
+		<input class="list-402" placeholder="请输入电话" value="{{item.tel}}" name="tel" bindblur="onInputTel"></input>
+  </view>
+	<view class="weui-cell">
+    <view class="weui-cell__bd" style="width:25%">姓名：</view>
+		<input class="list-402" placeholder="请输入姓名" value="{{item.patientName}}" name="patientName" bindblur="onInputPatientName"></input>
+  </view>
+	
+    <view class="btn-area">
+      <button type="primary" bindtap="updateData" >修改</button>
+      <button type="primary" bindtap="deleteData" >删除</button>
+      <button type="primary" bindtap="back">返回</button>
+    </view>
+  </view>
+  </view>
+</view>

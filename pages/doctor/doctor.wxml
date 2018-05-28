@@ -1,0 +1,50 @@
+
+<view class='container'>
+
+<!--弹窗-->
+
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">挂号成功</view>
+  <view class="modal-content">
+    <view class='modal-text'>当前排序为:{{rankNum}}号</view>
+  </view>
+
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>
+
+  <!--  help btn  -->
+  <view class='btn-group'>
+
+    <button type='primary' class='helpbook' bindtap='helpbookTap'>帮助挂号</button>
+    <button type='primary' class='guohao' bindtap='guohaoTap'>过　号</button>
+    
+  </view>
+
+
+
+<!-- 当前患者信息  -->
+ <view class='box-1'>
+  <view class='sickInfo' >
+    <view class='sickName'>姓名:　{{listOld[currRecNo].patientName}}</view>
+    <view class='sickSex'>性别:　{{listOld[currRecNo].sex}}</view>
+    <view class='sickAge'>年龄:　{{listOld[currRecNo].age}}</view>
+    <view class='sickWeight'>体重:　{{listOld[currRecNo].weight}}</view>
+    <view class='sickHigh'>身高:　{{listOld[currRecNo].high}}</view>
+    <!-- <view class='sickActive'>状态:</view> -->
+  </view>
+
+  <view class='num-group'>
+    <text class='totalPeople'>总人数:{{length}}人</text>
+    <text class='hadPeople'>已诊人数:{{hadLength}}人</text>
+    <text class='notPeopel'>未诊人数:{{length-hadLength}}人</text>
+  </view>
+ </view> 
+ 
+
+   <view class='callNext'>
+       <button  type='primary' class='btnCall' bindtap='callNextTap'>叫　号</button>
+   </view>
+ </view>

@@ -1,0 +1,88 @@
+
+
+<view class="container">
+  <view class="page-body">
+    
+    
+    <view class='info' style='display:{{display}}'>
+        <text class='name'>姓名:{{item.patientName?item.patientName:""}}</text> 
+        <text class='num'>当前号:{{currNum !=null ? currNum:""}}</text>
+        <text class='allNum'>总人数:{{totalQty !=null ? totalQty:""}}</text> 
+        <text class='waitNum'>等待人数:{{waitQty !=null ? waitQty:""}}</text>
+    </view>
+
+  <block wx:if="{{isShow}}">
+    <view class='patient' style='display:{{Pdisplay}}'>
+    <view class='nav' bindtap='QRtap'>
+        <view class='icon'>
+          <image src='/image/QR.png'></image>
+        </view>
+        <view class='text'>扫码挂号 / 预约登记</view>
+    </view>
+    <view class='nav' bindtap='registerTap' >
+        <view class='icon'>
+          <image src='/image/hongshizi.png'></image>
+        </view>
+        <view class='text'>预约挂号</view>
+    </view>
+    
+      <view class='nav' bindtap='recordTap'>
+        <view class='icon'>
+          <image src='/image/record.png' ></image>
+        </view>
+        <view class='text'>挂号记录</view>
+    </view>
+    
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class='doctor' style='display:{{Ddisplay}}'>
+      <view class='nav' bindtap='currGuahaoTap'>
+            <view class='icon'>
+              <image src='/image/guahao_hl.png'></image>
+            </view>
+            <view class='text'>当前挂号</view>
+        </view>
+        <view class='nav' bindtap='ghrecordTap'>
+          <view class='icon'>
+            <image src='/image/record_blue.png' ></image>
+          </view>
+          <view class='text'>挂号记录</view>
+      </view>
+        <view class='nav' bindtap='hadSeenTap' >
+            <view class='icon'>
+              <image src='/image/record.png'></image>
+            </view>
+            <view class='text'>已诊记录</view>
+        </view>
+        <view class='nav' bindtap='record1Tap' >
+            <view class='icon'>
+              <image src='/image/record_hl.png'></image>
+            </view>
+            <view class='text'>过号记录</view>
+        </view>
+        <view class='nav' bindtap='helpbookTap' >
+            <view class='icon'>
+              <image src='/image/help.png'></image>
+            </view>
+            <view class='text'>帮助挂号</view>
+        </view>
+    </view>
+    </block>
+        <!--弹窗-->
+      <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+      <view class="modal-dialog" wx:if="{{showModal}}">
+        <view class="modal-title">挂号成功</view>
+        <view class="modal-content">
+          <view class='modal-text'>当前排序为:{{rankNum}}号</view>
+        </view>
+
+        <view class="modal-footer">
+          <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+        </view>
+      </view>
+
+  </view>
+</view>
+     

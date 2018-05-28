@@ -1,0 +1,38 @@
+/* footer  */
+.footer {
+  width: auto;
+  height: 100rpx;
+}
+.book ,.hadSeen,.doctor-my {
+  width: 33%;
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 25rpx;
+  background: #fff;
+  color: #7A7E83;
+  position: relative;
+  text-align: center;
+}
+.book ,.hadSeen {
+  border-right: 1rpx solid #d2d2d2;
+}
+.selected {
+  color: #98E165;
+}
+.text {
+  height: 30rpx;
+  width: auto;
+  position: absolute;
+  left: 77rpx;
+  top: 30rpx;
+}
+.img {
+  position: absolute;
+  left: 100rpx;
+  top: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+}

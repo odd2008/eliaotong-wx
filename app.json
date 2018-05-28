@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/patient/patient",
+    "pages/patient/record/record",
+    "pages/patient/my/my",
+    "pages/demo/insertData/insertData",
+    "pages/demo/registerData/registerData",
+    "pages/demo/updateData/updateData",
+    "pages/demo/selectData/selectData",
+    "pages/doctor/hadSeen/hadSeen",
+    "pages/patient/my/update/update",
+    "pages/doctor/doctor-my/doctor-my",
+    "pages/patient/bespeak2/bespeak2",
+    "pages/patient/bespeak/bespeak",
+    "pages/patient/register/register",
+    "pages/doctor/doctor-check/doctor-check",
+    "pages/doctor/doctor-check/tips/tips",
+    "pages/doctor/doctor",
+    "pages/patient/register/detail/detail",
+    "pages/doctor/doctor-check/activate/activate",
+    "pages/patient/info",
+    "pages/doctor/record1/record1",
+    "pages/doctor/yzrecord/yzrecord",
+    "pages/doctor/ghrecord/ghrecord"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#01CBD9",
+    "navigationBarTitleText": "e疗通",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#313131;",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/patient/patient",
+        "iconPath": "image/home_hl.png",
+        "selectedIconPath": "image/home.png",
+        "text": "菜单"
+      },
+      {
+        "pagePath": "pages/patient/info",
+        "iconPath": "image/info_hl.png",
+        "selectedIconPath": "image/info.png",
+        "text": "信息"
+      },
+      {
+        "pagePath": "pages/patient/my/my",
+        "iconPath": "image/me1.png",
+        "selectedIconPath": "image/me2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 30000,
+    "uploadFile": 30000,
+    "downloadFile": 30000
+  },
+  "debug": false
+}

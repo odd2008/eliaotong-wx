@@ -1,0 +1,36 @@
+
+/* @import "/pages/common/lib/weui.wxss";
+@import "/pages/common/index.wxss"; */
+
+.warn {
+  height: 68rpx;
+  line-height: 68rpx;
+  font-size: 25rpx;
+  font-weight: 550;
+  color: #7e7e7e;
+  background: #F1F0F6;
+}
+.warn-text {
+  margin-left: 20rpx;
+}
+
+.weui-cell__bd{
+  min-height: 40rpx;
+  word-break: break-all;
+}
+.weui-cell {
+  border-bottom: 1rpx solid #F1F0F6;
+}
+.weui-cell:before  {
+  border-top: none;
+}
+
+.weui-cells:after {
+  border-bottom: none;
+}
+.num {
+  display: none;
+}
+.normal {
+  display: inline-block;
+}
